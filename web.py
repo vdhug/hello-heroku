@@ -1,7 +1,6 @@
 from flask import Flask
-
 app = Flask(__name__)
 
-@app_route('/')
-def index:
-  return "Hello, world. I am a Heroku Flask application"
+@app.route('/')
+def index():
+  return 'hello, world'
